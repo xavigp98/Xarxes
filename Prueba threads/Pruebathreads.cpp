@@ -9,28 +9,24 @@
 
 
 void xavi() {
-	for (int i = 0; i < 10; i++)
-	{
-		std::cout << "Xavi ";
-	}
+	char c;
+	std::cin >> c;
+	std::cout << "has escrito " << c << std::endl;
 }
 
-void cacahuete() {
-	for (int i = 0; i < 10; i++) {
-		std::cout << "Almendra ";
-	}
-}
+
 
 int main()
 {
-	int valor;
 	std::thread first(xavi);
-	std::thread second(cacahuete);
-
 	
 
-	first.join();
-	second.join();
+	for (int i = 0; i < 1000; i++) {
+	std::cout << i << std::endl;
+	Sleep(1000);
+	}
+
+	
 
 
 	
