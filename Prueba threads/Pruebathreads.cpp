@@ -12,6 +12,7 @@ void xavi() {
 	char c;
 	std::cin >> c;
 	std::cout << "has escrito " << c << std::endl;
+	//hola
 }
 
 
